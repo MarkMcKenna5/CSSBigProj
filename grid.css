@@ -1,0 +1,24 @@
+.container {
+    margin: 20px;
+    display: grid;
+    /* grid-template-columns: 200px 2fr 20% 1fr; */
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 5rem minmax(10px, 200px);
+}
+
+.el1 {
+    background: orange;
+}
+.el2 {
+    background: red;
+}
+.el3 {
+    background: green;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.el4 {
+    background: blue;
+}
